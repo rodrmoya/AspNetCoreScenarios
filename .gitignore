@@ -5,3 +5,6 @@ src/BlazorSignalRWebChat/Server/bin/
 src/BlazorSignalRWebChat/Shared/obj/
 src/BlazorSignalRWebChat/Shared/bin/
 src/BlazorSignalRWebChat/.vs/
+src/ContainerServices/.vs/
+src/ContainerServices/ContainerServices.API/obj/
+src/ContainerServices/ContainerServices.API/bin/
