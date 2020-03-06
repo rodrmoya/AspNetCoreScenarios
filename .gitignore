@@ -1,0 +1,4 @@
+src/BlazorSignalRWebChat/Client/obj/
+src/BlazorSignalRWebChat/Server/obj/
+src/BlazorSignalRWebChat/Shared/obj/
+src/BlazorSignalRWebChat/.vs/
