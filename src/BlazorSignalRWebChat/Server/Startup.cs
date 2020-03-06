@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using BlazorSignalRApp.Server.Hubs;
 
 namespace BlazorSignalRWebChat.Server
 {
@@ -19,6 +20,7 @@ namespace BlazorSignalRWebChat.Server
                 opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
                     new[] { "application/octet-stream" });
             });
+            services.AddSignalR ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +42,7 @@ namespace BlazorSignalRWebChat.Server
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapHub<ChatHub> ("/chatHub");
                 endpoints.MapFallbackToClientSideBlazor<Client.Program>("index.html");
             });
         }
