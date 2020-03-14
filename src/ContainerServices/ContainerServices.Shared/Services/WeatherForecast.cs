@@ -1,6 +1,6 @@
 using System;
 
-namespace ContainerServices.API
+namespace ContainerServices.Shared
 {
 	public class WeatherForecast
 	{

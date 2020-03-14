@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerServices.API", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerServices.Web", "ContainerServices.Web\ContainerServices.Web.csproj", "{35AADC70-3821-4B33-B34C-C7447EB3D58B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerServices.Shared", "ContainerServices.Shared\ContainerServices.Shared.csproj", "{96D79595-602E-4DB9-B776-A2EC3316881E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{35AADC70-3821-4B33-B34C-C7447EB3D58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AADC70-3821-4B33-B34C-C7447EB3D58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AADC70-3821-4B33-B34C-C7447EB3D58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D79595-602E-4DB9-B776-A2EC3316881E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D79595-602E-4DB9-B776-A2EC3316881E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D79595-602E-4DB9-B776-A2EC3316881E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D79595-602E-4DB9-B776-A2EC3316881E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
