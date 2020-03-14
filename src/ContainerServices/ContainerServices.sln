@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerServices.Web", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerServices.Shared", "ContainerServices.Shared\ContainerServices.Shared.csproj", "{96D79595-602E-4DB9-B776-A2EC3316881E}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{08AD8807-7F31-44DD-898F-6D05C6DDEF5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{96D79595-602E-4DB9-B776-A2EC3316881E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96D79595-602E-4DB9-B776-A2EC3316881E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96D79595-602E-4DB9-B776-A2EC3316881E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AD8807-7F31-44DD-898F-6D05C6DDEF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AD8807-7F31-44DD-898F-6D05C6DDEF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AD8807-7F31-44DD-898F-6D05C6DDEF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AD8807-7F31-44DD-898F-6D05C6DDEF5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

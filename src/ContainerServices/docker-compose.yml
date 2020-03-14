@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  containerservices.web:
+    image: ${DOCKER_REGISTRY-}containerservices
+    build:
+      context: .
+      dockerfile: ContainerServices.Web/Dockerfile
+
+  containerservices.api:
+    image: ${DOCKER_REGISTRY-}containerservices
+    build:
+      context: .
+      dockerfile: ContainerServices.API/Dockerfile
+
