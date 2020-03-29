@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -15,13 +16,13 @@ namespace ContainerServices.Shared
 
 		public string Summary { get; set; }
 
-		public static async Task<WeatherForecast> FromUrlAsync (string url)
+		public static async Task<IEnumerable<WeatherForecast>> FromUrlAsync (string url)
 		{
 			using var _httpClient = new HttpClient ();
 			var response = await _httpClient.GetAsync (url, HttpCompletionOption.ResponseHeadersRead);
 			response.EnsureSuccessStatusCode ();
 			var data = await response.Content.ReadAsStringAsync ();
-			return JsonConvert.DeserializeObject<WeatherForecast> (data);
+			return JsonConvert.DeserializeObject<IEnumerable<WeatherForecast>> (data);
 		}
 	}
 }

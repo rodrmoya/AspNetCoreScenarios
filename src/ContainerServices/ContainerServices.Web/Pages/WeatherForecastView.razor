@@ -1,0 +1,23 @@
+﻿@using System.Linq;
+@using ContainerServices.Shared;
+
+<h3>Weather</h3>
+
+@if (Forecast == null) {
+	<p>Loading...</p>
+} else {
+	<p>Date: @Forecast.Date</p>
+	<p>Temperature: {@Forecast.TemperatureC}ºC/{@Forecast.TemperatureF}ºF</p>
+	<p>Summary: @Forecast.Summary</p>
+}
+
+@code {
+	private WeatherForecast Forecast;
+
+	protected override async Task OnInitializedAsync ()
+	{
+		var result = await WeatherForecast.FromUrlAsync ("http://containerservices.api:5000/weatherforecast");
+		Forecast = result.FirstOrDefault ();
+		await base.OnInitializedAsync ();
+	}
+}
