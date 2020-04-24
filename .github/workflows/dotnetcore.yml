@@ -1,0 +1,29 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.200
+    - name: Build BlazorSignalRWebChat
+      run: |
+        cd src/BlazorSignalRWebChat
+        dotnet restore
+        dotnet build --configuration Release --no-restore
+    - name: Build ContainerServices
+      run: |
+        cd src/ContainerServices
+        dotnet restore ContainerServices.sln
+        dotnet build ContainerServices.sln --configuration Release --no-restore
