@@ -1,0 +1,9 @@
+{
+	"name": "ASP.NET Core Scenarios",
+	
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	
+	"postCreateCommand": "umane -a"
+}
