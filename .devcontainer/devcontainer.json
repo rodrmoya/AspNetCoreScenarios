@@ -5,5 +5,5 @@
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 	
-	"postCreateCommand": "umane -a"
+	"postCreateCommand": "ls /folder/which/does/not/exist"
 }
